@@ -8,9 +8,10 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    height: 16%;
+    height: 15%;
     width: 160%;
     transition: width 600ms;
+    max-height:15%
 }
 .wrapper:hover{
     width: 100%;
