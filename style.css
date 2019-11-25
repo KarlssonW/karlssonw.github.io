@@ -22,9 +22,10 @@
 }
 
 .B1 {
-    background-color: dff6f0;
+    background-color: #dff6f0;
     height: 45%;
     font-size: 120px;
+    color: #205cd3;
 }
 
 .B2 {
