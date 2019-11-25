@@ -22,19 +22,19 @@
 }
 
 .B1 {
-    background-color: #3A0088;
+    background-color: dff6f0;
     height: 45%;
     font-size: 120px;
 }
 
 .B2 {
-    background-color: #930077;
+    background-color: #46b3e6;
     height: 25%;
     font-size: 80px;
 }
 
 .B3 {
-    background-color: #E61C5D;
+    background-color: #4d80e4;
     height: 100%;
     width: 100%;
     font-size: 65px;
@@ -44,23 +44,23 @@
 }
 
 .B31 {
-    background-color: #B91449;
+    background-color: #205cd3;
 }
 .B32 {
-    background-color: #93103A;
+    background-color: #1949a8;
 }
 .B33 {
-    background-color: #750C2E;
+    background-color: #143a86;
 }
 
 .B4 {
-    background-color: #FFBD39;
+    background-color: #2e279d;
     height: 100%;
     font-size: 50px;
     transition: width 600ms;
 }
 .B41 {
-    background-color: #F9A600;
+    background-color: #241f7d;
     width: 60%;
 }
 
