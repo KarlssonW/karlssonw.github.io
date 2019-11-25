@@ -36,34 +36,37 @@
     font-size: 80px;
 }
 
-.B3 {
-    background-color: #4d80e4;
+.B3 {;
     height: 100%;
     width: 100%;
     font-size: 65px;
 }
-.B3:hover {
-    
+
+.W1 {
+    background-color: #4d80e4;
 }
 
 .B31 {
-    background-color: #205cd3;
+    background-color: #00000022;
 }
 .B32 {
-    background-color: #1949a8;
+    background-color: #00000044;
 }
 .B33 {
-    background-color: #143a86;
+    background-color: #00000066;
 }
 
 .B4 {
-    background-color: #2e279d;
     height: 100%;
     font-size: 50px;
     transition: width 600ms;
 }
+.W2 {
+    background-color: #2e279d;
+}
+
 .B41 {
-    background-color: #241f7d;
+    background-color: #00000044;
     width: 60%;
 }
 
