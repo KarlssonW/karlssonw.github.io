@@ -1,95 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-.block {
-    display: table;
-    width: 100%;
-}
-.wrapper {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    height: 15%;
-    width: 160%;
-    transition: width 600ms;
-    max-height:15%
-}
-.wrapper:hover{
-    width: 100%;
-}
-.subblock {
-    display: table;
-    height: 100%;
-    font-size: 40px;
-    width: 20%;
-}
-
-.B1 {
-    background-color: #dff6f0;
-    height: 45%;
-    font-size: 120px;
-    color: #205cd3;
-}
-
-.B2 {
-    background-color: #46b3e6;
-    height: 25%;
+.namebox {
+    text-align: center;
+    font-family: "roboto";
+    color: white;
     font-size: 80px;
+    border: 8px solid white;
+    padding: 10px;
+    box-shadow: 0px 0px 5px black, inset 0px 0px 5px black;
+    text-shadow: 0px 0px 5px black;
+    background-color: #00000000;
+    transition: background-color 500ms;
+    cursor: pointer; 
+    z-index: 100;
 }
 
-.B3 {;
-    height: 100%;
-    width: 100%;
-    font-size: 65px;
-}
-
-.W1 {
-    background-color: #4d80e4;
-}
-
-.B31 {
-    background-color: #00000022;
-}
-.B32 {
-    background-color: #00000044;
-}
-.B33 {
+.namebox:hover {
     background-color: #00000066;
 }
 
-.B4 {
+.wholescreen {
+    position: absolute;
     height: 100%;
-    font-size: 50px;
-    transition: width 600ms;
-}
-.W2 {
-    background-color: #2e279d;
-}
-
-.B41 {
-    background-color: #00000044;
-    width: 60%;
+    width: 100%;
+    z-index: 0;
+    background-image: linear-gradient(320deg, #00FFFF, #FF00FF);
+    opacity: 0.5;
+    animation-name: bghue;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-.content {
-    display: table-cell;
-    vertical-align: middle;
+.container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     overflow: hidden;
     position: relative;
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: 'Roboto';
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    background-color: #2e279d;
+    background-image: url("bg.png");
+    background-size: 512px;
+    animation-name: bgshift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 html {
     height: 100%;
     width: 100%;
     overflow: hidden;
+}
+
+@keyframes bgshift{
+    from{
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    to{
+        background-position-x: 512px;
+        background-position-y: 362px;
+    }
+}
+
+@keyframes bghue {
+    from { filter: hue-rotate(360deg)}
+    to { filter: hue-rotate(0deg)}
 }
