@@ -9,27 +9,14 @@
     padding: 10px;
     box-shadow: 0px 0px 5px black, inset 0px 0px 5px black;
     text-shadow: 0px 0px 5px black;
-    background-color: #00000000;
+    background-color: #00000033;
     transition: background-color 500ms;
     cursor: pointer; 
     z-index: 100;
 }
 
 .namebox:hover {
-    background-color: #00000066;
-}
-
-.wholescreen {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-    background-image: linear-gradient(320deg, #00FFFF, #FF00FF);
-    opacity: 0.5;
-    animation-name: bghue;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    background-color: #00000088;
 }
 
 .container {
@@ -48,12 +35,18 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-image: url("bg.png");
-    background-size: 512px;
-    animation-name: bgshift;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url("bg.png"), linear-gradient(320deg, #00FFFF, #FF00FF);
+    background-size: 512px, 100%;
+    background-blend-mode: multiply;
+    animation: bgshift 10s linear infinite;
+    z-index: -1;
+    height: 100%;
+    width:100%;
 }
 
 html {
@@ -64,16 +57,13 @@ html {
 
 @keyframes bgshift{
     from{
-        background-position-x: 0px;
-        background-position-y: 0px;
+        background-position-x: 0px, 0px;
+        background-position-y: 0px, 0px;
+        filter: hue-rotate(359deg);
     }
     to{
-        background-position-x: 512px;
-        background-position-y: 362px;
+        background-position-x: 512px, 0px;
+        background-position-y: 362px, 0px;
+        filter: hue-rotate(0deg);
     }
-}
-
-@keyframes bghue {
-    from { filter: hue-rotate(360deg)}
-    to { filter: hue-rotate(0deg)}
 }
