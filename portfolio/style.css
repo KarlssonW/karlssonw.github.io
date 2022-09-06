@@ -23,7 +23,7 @@
 */
 
 .images {
-    width: 70vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     flex-grow: 4;
@@ -31,6 +31,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: auto;
+    margin: auto;
 }
 
 img{
@@ -45,14 +46,24 @@ img{
 h1{
     font-size: 50px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    color: #333333;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-left: 70px;
 }
 
 body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-grow: 4;
+    flex-shrink: 3;
     overflow: auto;
     position: relative;
     height: 100%;
