@@ -23,7 +23,7 @@
 */
 
 .images {
-    width: 90vw;
+    width: 75vw;
     display: flex;
     flex-direction: row;
     flex-grow: 4;
