@@ -32,7 +32,6 @@ document.addEventListener('wheel', (event) => {
 
 function fullimg (element) {
 	let filename = element.src.split("/").slice(-1)[0]
-	console.log(filename)
 	let fs = document.getElementById("fullscreen")
 	fs.style.zIndex = "100"
 	fs.innerHTML = `<img class="fullimg" onclick="closefullimg()" src="img/` + filename + `">` 

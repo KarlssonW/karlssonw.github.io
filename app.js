@@ -7,7 +7,7 @@ const routes = {
 };
 
 const onNavigate = (pathname) => {
-	if(pathname == "/" || pathname == "about" || pathname == "contact") {
+	if(pathname == "/" || pathname == "about" || pathname == "contact" || pathname == "") {
 		document.getElementById("navbar").style.minWidth="50vw"
 		document.getElementById("content").style.width="50vw"
 	} else {
