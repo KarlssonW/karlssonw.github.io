@@ -1,102 +1,122 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
+html{
+	position: fixed;
 }
 
-.namebox {
-    position: relative;
-    text-align: center;
-    font-family: "roboto";
-    color: white;
-    font-size: 80px;
-    border: 8px solid white;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 5px black;
-    text-shadow: 0px 0px 5px black;
-    background: transparent;
-    transition: transform 0.4s;
-    cursor: pointer; 
-    transform-style: preserve-3d;
+body{
+	position: fixed;
+	margin: 0;
+	background-color: #000000;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
-.card:hover .namebox {
-    transform: rotateX(180deg);
+#site{
+	left: -100vw;
+	height: 100vh;
+	width: min-content;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#navbar{
+	position: relative;
+	min-width: 50vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	transition: min-width 800ms;
+	background-color: #000000;
+	z-index: 10;
 }
 
-.card {
-    background-color: transparent;
-    width: 750px;
-    height: 150px;
-    perspective: 1000px;
+#seperator{
+	position: relative;
+	background-color: #000000;
+	z-index: 5;
 }
 
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    animation: bgshift 10s linear infinite;
-    background: url(bg.png);
-    background-size: 512px;
-    padding: 20px;
+#seperatorline{
+	background-color: #FFFFFF;
+	height: 65vh;
+	width: 3px;
+	z-index: 6;
 }
 
-.back {
-    font-size: 60px;
-    padding-top: 30px;
-    transform: rotateX(180deg);
+#content{
+	position: relative;
+	width: 50vw;
+	transition: width 800ms;
+	overflow-x: scroll;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+	scrollbar-width: none;  /* Firefox */
+	z-index: 9;
+}
+#content::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.about{
+	color: #FFFFFF;
+	font-family: Jost, arial, sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 16px 32px;
+	width: 25vw;
 }
 
-
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+.navelement{
+	width: min-content;
+	font-family: Jost, arial, sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	padding: 8px 32px;
+	transition: padding 100ms;
+	color: #FFFFFF;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    background: url("bg.png"), linear-gradient(320deg, #00FFFF, #FF00FF);
-    background-size: 512px, 100%;
-    background-blend-mode: multiply;
-    animation: bgshift 10s linear infinite;
-    height: 100%;
-    width:100%;
+.navlink{
+	text-decoration: none;
 }
 
-html {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+.navelement:hover{
+	padding: 8px 16px;
 }
 
-@keyframes bgshift{
-    from{
-        background-position-x: 0px, 0px;
-        background-position-y: 0px, 0px;
-        filter: hue-rotate(359deg);
-    }
-    to{
-        background-position-x: 512px, 0px;
-        background-position-y: 362px, 0px;
-        filter: hue-rotate(0deg);
-    }
+.imgrow{
+	transition: left 200ms;
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.portfolioimg{
+	height: 30vh;
+	margin: 10px;
+	border: 3px solid white;
+}
+
+#fullscreen {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: #000000AA;
+	z-index: -10;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fullimg{
+	max-width:100%;
+	max-height:100%;
+	position: relative;
 }

@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Karlsson Winkels</title>
-        <meta name="description" content="Karlsson Winkels">
-        <meta name="keywords" content="Karlsson Winkels">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="prefetch" href="bg.png">
-    </head>
-    <body>
-        <div class="container">
-            <div class="card">
-                <div class="namebox">
-                    <div Class="front">Karlsson Winkels</div>
-                    <div Class="back"><a href='mai&#108;to&#58;ka&#37;&#55;2lsson&#64;&#119;i%6Ek&#101;%6Cs%2&#69;&#98;er&#108;i&#110;'>ka&#114;l&#115;&#115;on&#64;win&#107;els&#46;b&#101;r&#108;in</a></div>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head>
+		<title>Karlsson Winkels</title>
+		<meta name="description" content="Karlsson Winkels">
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="googlebot" content="noindex">
+		<meta name="keywords" content="Karlsson Winkels">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="contents/about.js"></script>
+		<script src="contents/portfolio.js"></script>
+		<script src="contents/3d.js"></script>
+		<script src="contents/contact.js"></script>
+	</head>
+	<body>
+		<div id="fullscreen"></div>
+		<div id="site">
+			<div id="navbar">
+				<a class="navlink" href="#" onclick="onNavigate('about'); return false;">
+					<div class="navelement">about</div>
+				</a>
+				<a class="navlink" href="#" onclick="onNavigate('portfolio'); return false;">
+					<div class="navelement">portfolio</div>
+				</a>
+				<a class="navlink" href="#" onclick="onNavigate('3d'); return false;">
+					<div class="navelement">3d</div>
+				</a>
+				<a class="navlink" href="#" onclick="onNavigate('contact');return false;">
+					<div class="navelement">contact</div>
+				</a>
+			</div>
+			<div id="seperator">
+				<div id="seperatorline"></div>
+			</div>
+			<div id="content">
+				<div id="root">
+					<script src="app.js"></script>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
