@@ -56,6 +56,7 @@ body{
 	-ms-overflow-style: none;  /* Internet Explorer 10+ */
 	scrollbar-width: none;  /* Firefox */
 	z-index: 9;
+	padding-right: 20px;
 }
 #content::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
