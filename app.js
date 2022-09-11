@@ -24,5 +24,5 @@ const onNavigate = (pathname) => {
 }
 
 const rootDiv = document.getElementById("root");
-if(window.location.href == "http://krlsn.xyz/") onNavigate(window.location.pathname)
+if(window.location.href == "http://krlsn.xyz/" || window.location.href == "https://krlsn.xyz/") onNavigate(window.location.pathname)
 else onNavigate(window.location.href.split("#")[1])
