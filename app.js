@@ -1,5 +1,4 @@
 const routes = {
-	'/' : about,
 	'about' : about,
 	'portfolio' : portfolio,
 	'3d' : d3d,
