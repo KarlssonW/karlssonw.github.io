@@ -1,4 +1,4 @@
-const num_imgs = 18
+const num_imgs = 26
 
 
 let row1_imgs = ""
