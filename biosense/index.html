@@ -2,14 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.BTDGCxDo.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/entry.BeuGGSUk.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.CmUQAml-.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.BQmSLjen.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index.UOLQSEWd.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BTDGCxDo.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BeuGGSUk.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.CmUQAml-.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BQmSLjen.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.UOLQSEWd.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -22,8 +22,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.BTDGCxDo.js"),
-						import("/_app/immutable/entry/app.BQmSLjen.js")
+						import("./_app/immutable/entry/start.BTDGCxDo.js"),
+						import("./_app/immutable/entry/app.BQmSLjen.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
